@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+    <section class="profile">
+      <div class="profile__wrap">
+        <h2 class="visually-hidden">Заполнение формы</h2>
+        <p class="profile__intro-text">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+        <form class="profile__form form" action="https://echo.htmlacademy.ru" method="POST">
+
+          <fieldset class="form__fullname fullname">
+            <ul class="fullname__list">
+              <li class="fullname__item">
+                <label class="fullname__field" for="second-name">Фамилия:</label>
+                <input class="fullname__input" type="text" name="second-name" id="second-name" placeholder="Укажите вашу фамилию *" required>
+              </li>
+              <li class="fullname__item">
+                <label class="fullname__field" for="first-name">Имя:</label>
+                <input class="fullname__input" type="text" name="first-name" id="first-name" placeholder="Укажите ваще имя *" required>
+              </li>
+              <li class="fullname__item">
+                <label class="fullname__field" for="third-name">Отчество:</label>
+                <input class="fullname__input" type="text" name="third-name" id="third-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__travel-progress travel-progress">
+            <legend class="travel-progress__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="travel-progress__list">
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-selfy"" id="progress-selfy" checked>
+                <label class="travel-progress__field" for="progress-selfy">Сделал селфи с акулой</label>
+              </li>
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-beach" id="progress-beach" checked>
+                <label class="travel-progress__field" for="progress-beach">Обгорел на пляже</label>
+              </li>
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-chack-noris" id="progress-chack-noris">
+                <label class="travel-progress__field" for="progress-chack-noris">Видел Чака Норриса</label>
+              </li>
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-suvenir" id="progress-suvenir">
+                <label class="travel-progress__field" for="progress-suvenir">Накупил сувениров</label>
+              </li>
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-tower" id="progress-tower" checked>
+                <label class="travel-progress__field" for="progress-tower">Удержал башню</label>
+              </li>
+              <li class="travel-progress__item">
+                <input class="travel-progress__checkbox" type="checkbox" name="progress-crash-hotel" id="progress-crash-hotel">
+                <label class="travel-progress__field" for="progress-crash-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__contacts contacts-form">
+            <legend class="contacts-form__title">Контактная информация</legend>
+            <ul class="contacts-form__list">
+              <li class="contacts-form__item">
+                <label class="contacts-form__field" for="phone-number">Номер телефона</label>
+                <input class="contacts-form__text" type="phone" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contacts-form__item">
+                <label class="contacts-form__field" for="email-address">Адрес почты</label>
+                <input class="contacts-form__text" type="email" name="email-address" id="email-address" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__platform choice-platform">
+            <legend class="choice-platform__title">С каким приложением путешевстовали?</legend>
+            <ul class="choice-platform__list">
+              <li class="choice-platform__item">
+                <input class="choice-platform__radio" type="radio" name="choice-platform" value="ios" id="platform-ios">
+                <label class="choice-platform__field" for="platform-ios">Pink для iOS</label>
+              </li>
+              <li class="choice-platform__item">
+                <input class="choice-platform__radio" type="radio" name="choice-platform" value="android" id="platform-android">
+                <label class="choice-platform__field" for="platform-android">Pink на Android</label>
+              </li>
+              <li class="choice-platform__item">
+                <input class="choice-platform__radio" type="radio" name="choice-platform" value="windows" id="platform-windows">
+                <label class="choice-platform__field" for="platform-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__impression impression">
+            <legend class="impression__title">Опишите свои эмоции</legend>
+            <textarea class="impression__input" name="comment" cols="30" rows="5" placeholder="можно прям в красках"></textarea>
+          </fieldset>
+
+          <button class="form__submit button" type="submit">Отправить форму</button>
+
+          <p class="form__prompt">* — обязательные поля</p>
+
+        </form>
+       </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="">
+          <img class="page-footer__logo-image" src="http://placehold.it/200x100" alt="">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="social__link social__link--twitter">Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a href="social__link social__link--facebook">Фейсбук</a>
+          </li>
+          <li class="social__item">
+            <a href="social__link social__link--youtube">Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработанно</b>
+        <a class="copyright__link" href="">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
